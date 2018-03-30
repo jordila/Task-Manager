@@ -1,0 +1,257 @@
+/*Reset style*/
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+input{
+	height: 20px;
+    width: 150px;
+    padding: 16px 6px;
+    font-size: 14px;
+    color: #666;
+    box-sizing: border-box;
+}
+input:focus{
+	outline: 0px;
+}
+textarea{
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 14px;
+}
+textarea:focus{
+    outline: 0px;
+}
+div[contenteditable=true]:focus{
+    background-color: #fff;
+}
+
+/*Icons*/
+.svg-inline--fa{
+    color: #999;
+}
+
+/*App specfic style*/
+#task-manager-wrapper{
+	display: block;
+	height: 100%;
+}
+
+/*Header Style*/
+.board-header{
+	height: 70px;
+    box-sizing: border-box;
+	overflow: auto;
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.board-header .board-name{
+	float: left;
+    font-size: 20px;
+    display: inline-block;
+    padding: 2px 4px;
+}
+.edit-boardname-icon{
+	display: inline-block;
+    padding: 4px 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.board-header .search{
+	float: right;
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+/*List Style*/
+.list-wrapper{
+	padding: 15px;
+    overflow: auto;
+    white-space: nowrap;
+    height: calc(100% - 70px);
+    box-sizing: border-box;
+}
+.list-item{
+	display: inline-block;
+	vertical-align: top;
+    width: 300px;
+    margin-right: 25px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: calc(100% - 20px);
+    overflow-y: scroll;
+    background-color: #efefef;
+}
+.list-label{
+	display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Card Style*/
+.card-item{
+	padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.card-item .header{
+
+}
+.card-item .header .status{
+	display: inline-block;
+}
+.card-item .header .edit{
+	float: right;
+	display: inline-block;	
+	cursor: pointer;
+	padding: 6px 10px;
+}
+.card-item .title{
+	margin-top: 15px;
+    font-size: 18px;
+}
+
+
+/*Add card*/
+.add-card-btn{
+	text-align: center;
+    cursor: pointer;
+    border: 1px solid#ccc;
+    padding: 10px;
+    font-size: 16px;
+    background: #fff;
+}
+.add-card-btn.hide{
+	display: none;
+}
+/*Add New List*/
+.add-list-btn{
+	display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-right: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: calc(100% - 20px);
+    overflow-y: scroll;
+    background-color: #efefef;
+    cursor: pointer;
+}
+.add-list-btn.hide{
+	display: none;
+}
+
+/*Add panel*/
+.add-panel{
+	margin-top: 20px;
+}
+.add-list{
+	display: inline-block;
+	width: 300px;
+    background: #efefef;
+    padding: 8px;
+    margin-top: 0px;
+}
+.add-panel input{
+	width: 100%;
+	margin-bottom: 8px;
+	display: block;
+}
+.add-panel .save-btn{
+	cursor: pointer;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 12px;
+    background: #fff;
+}
+.add-panel .cancel-btn{
+	cursor: pointer;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    display: inline-block;	
+    background: #fff;
+}
+
+/*Model style*/
+.model-wrapper{
+    display: block;
+    position: absolute;
+    background: #000;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 99; 
+}
+.model-wrapper.hide{
+    display: none;
+}
+.edit-card-model{
+    display: inline-block;
+    margin: 0 auto;
+    width: 500px;
+    top: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: #fff;
+}
+.edit-card-model .header{
+    margin-bottom: 25px;
+}
+.edit-card-model .title{
+    display: inline-block;
+    font-weight: bold;
+}
+.edit-card-model .fa-times{
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    padding: 6px 12px;
+}
+
+.edit-card-model .edit-panel{
+    margin-bottom: 25px;
+}
+.edit-card-model .edit-panel input{
+    width: 200px;
+}
+.edit-card-model .field{
+    margin-bottom: 25px;
+}
+.edit-card-model .field label{
+    width: 100px;
+    display: inline-block;
+}
+.edit-card-model .edit-panel textarea{
+    width: 300px;
+    height: 100px;
+    text-align: left;
+    vertical-align: top;
+}
+.edit-card-model .footer .save{
+    cursor: pointer;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 12px;
+    background: #fff;
+}
+.edit-card-model .footer .cancel{
+    cursor: pointer;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background: #fff;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Itra-Manager : A simple way to manage your task</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="task-manager-wrapper">
+		<!-- Header Panel -->
+		<div class="board-header">
+			<div class="board-name" id="board-name">UI UX Tasks</div>
+			<i class="fas fa-pencil-alt edit-boardname-icon" onclick="changeBoardName()"></i>
+			<div class="search">
+				<input type="text" placeholder="Search..." name="searchBoard">
+			</div>
+		</div>
+
+		<div class="list-wrapper" id="list-wrapper"></div>
+	</div>
+
+	<!-- Model Markup -->
+	<div id="model" class="model-wrapper hide">
+		<div class="edit-card-model">
+			<div class="header">
+				<div class="title"></div>
+				<i class="fas fa-times" onclick="closeModel()"></i>
+			</div>
+			<div class="edit-panel">
+				<div class="field">
+					<label>Title:</label> 
+					<input type="text" name="title" value="" id="card-title">
+				</div>
+				<div class="field">
+					<label>Status:</label>
+					<input type="text" name="status" value="" id="card-title">
+				</div>
+				<div class="field">
+					<label>Description:</label>
+					<textarea rows="4" cols="50" id="card-desc"></textarea>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="save" onclick="saveCardDetail()">Save</div>
+				<div class="cancel" onclick="closeModel()">Cancel</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
