@@ -12,3 +12,6 @@ This is a Task manager app that can be used to manage task board for indivisidua
 5. user is allowed to edit board name.
 6. Developed using Plain Javascript, HTML & CSS.
 
+## Demo
+Download a demo video : https://github.com/techhysahil/Task-Manager/blob/master/docs/Demo/video%20v-1.mov?raw=true
+
