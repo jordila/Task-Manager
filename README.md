@@ -1,6 +1,6 @@
 # Task-Manager + API
 
-'Fork' [de Task-Manager (un tablón de tareas hecho con JavaScript 'vainilla')](https://github.com/techhysahil/Task-Manager). El código original almacena las listas y sus tareas localStorage). Le añadimos el código necesario para la integración con la API de GeeksHubs e irá extendiendo su funcionalidad, permitiendo :
+'Fork' [de Task-Manager (un tablón de tareas hecho con JavaScript 'vainilla')](https://github.com/techhysahil/Task-Manager).El código original almacena las listas y sus tareas localStorage). Le añadimos el código necesario para la integración con la API de GeeksHubs e irá extendiendo su funcionalidad, permitiendo :
 
 - [x] Registro de usuarios
 
