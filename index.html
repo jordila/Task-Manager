@@ -1,53 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Itra-Manager : A simple way to manage your task</title>
-
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-</head>
-<body>
-	<div id="task-manager-wrapper">
-		<!-- Header Panel -->
-		<div class="board-header">
-			<div class="board-name" id="board-name">UI UX Tasks</div>
-			<i class="fas fa-pencil-alt edit-boardname-icon" onclick="changeBoardName()"></i>
-			<div class="search">
-				<input type="text" placeholder="Search..." name="searchBoard">
-			</div>
-		</div>
-
-		<div class="list-wrapper" id="list-wrapper"></div>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<title> Login y Registro de usuarie | APItrello de GeeksHubs </title>
+	<style>
+	    body{
+            font-family: sans-serif, Arial, Helvetica;    
+	    margin: 10px;
+	    padding: 10px;
+	    }
+	</style>
+    </head>
+    <body>
+	<div class="input">
+	    <label for="username">usuario:</label>
+	    <input id="username">
+	    <label for="password">contraseña:</label>
+	    <input id="password">
+	    <button onclick="getUser()">Registrar</button>
 	</div>
-
-	<!-- Model Markup -->
-	<div id="model" class="model-wrapper hide">
-		<div class="edit-card-model">
-			<div class="header">
-				<div class="title"></div>
-				<i class="fas fa-times" onclick="closeModel()"></i>
-			</div>
-			<div class="edit-panel">
-				<div class="field">
-					<label>Title:</label> 
-					<input type="text" name="title" value="" id="card-title">
-				</div>
-				<div class="field">
-					<label>Status:</label>
-					<input type="text" name="status" value="" id="card-title">
-				</div>
-				<div class="field">
-					<label>Description:</label>
-					<textarea rows="4" cols="50" id="card-desc"></textarea>
-				</div>
-			</div>
-			<div class="footer">
-				<div class="save" onclick="saveCardDetail()">Save</div>
-				<div class="cancel" onclick="closeModel()">Cancel</div>
-			</div>
-		</div>
+	    <button onclick="getToken()">login</button>
 	</div>
-	
-	<script type="text/javascript" src="./js/main.js"></script>
-</body>
+	<p><i> Una vez registrad@s, al hacer 'login' el token  que nos devuelve la APItrello de GeeksHubs es : </i></p>
+ 	<div id="token"></div> 
+	<div id="result"></div>
+	<script src="js/apitrello-registro.js"></script>
+	<script src="js/apitrello-login.js"></script>
+    </body>
 </html>

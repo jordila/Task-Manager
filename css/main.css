@@ -3,9 +3,11 @@ html, body{
 	height: 100%;
 }
 body{
+        font-family: sans-serif, Arial, Helvetica;    
 	margin: 0px;
 	padding: 0px;
 }
+
 input{
 	height: 20px;
     width: 150px;
