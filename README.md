@@ -1,17 +1,40 @@
-# Task-Manager
-This project is to create Task Manger like trello using vanilla JavaScript
+# Task-Manager + API
 
-## Getting Started
-This is a Task manager app that can be used to manage task board for indivisidual or for a team. Just clone the repo & open "index.html" using any browser.
+'Fork' [de Task-Manager (un tablón de tareas hecho con JavaScript 'vainilla')](https://github.com/techhysahil/Task-Manager). El código original almacena las listas y sus tareas localStorage). Le añadimos el código necesario para la integración con la API de GeeksHubs e irá extendiendo su funcionalidad, permitiendo :
 
-## Features:
-1. User can add List.
-2. User can add cards inside list.
-3. User allowed to edit card information.
-4. User data is saved using LocalStorage.
-5. user is allowed to edit board name.
-6. Developed using Plain Javascript, HTML & CSS.
+- [x] Registro de usuarios
 
-## Demo
-Download a demo video : https://github.com/techhysahil/Task-Manager/blob/master/docs/Demo/video%20v-1.mov?raw=true
+- [x] Login de usuarios
+
+- [x] Almacenamiento del Token (JWT)
+
+- [ ] Listado de tareas
+
+- [ ] Recuperar todas las listas de tareas de usuario
+
+- [ ] Crear una lista en particular de usuario
+
+- [ ] Editar una lista en particular de usuario
+
+- [ ] Eliminar una lista en particular de usuario
+
+- [ ] Añadir tareas a la lista
+
+- [ ] Recuperar todas las tareas de la lista
+
+- [ ] Eliminar todas las tareas de una lista
+
+- [ ] Proceso para recuperar una tarea
+
+- [ ] Proceso para modificar una tarea
+
+
+### Inspiración
+
+
+- Para el [procesado de tokens (JWT), JonathanMH.](https://jonathanmh.com/example-json-web-tokens-vanilla-javascript/)
+- [Task-Manager (un tablón de tareas hecho con JavaScript 'vainilla').](https://github.com/techhysahil/Task-Manager)
+
+
+### Licencia MIT o GPL. Tu eliges.
 
